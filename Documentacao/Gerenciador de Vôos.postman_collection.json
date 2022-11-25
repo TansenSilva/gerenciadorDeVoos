@@ -1,0 +1,939 @@
+{
+	"info": {
+		"_postman_id": "70422f41-7124-4b9f-83fd-e453fb9d0e91",
+		"name": "Gerenciador de Vôos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22744326"
+	},
+	"item": [
+		{
+			"name": "Buscar todos os vôos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/voos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Buscar todos os vôos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/voos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:21:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"dataPartida\": \"2022-11-23\",\n        \"horaPartida\": \"08:30\",\n        \"dataChegada\": \"2022-11-23\",\n        \"horaChegada\": \"09:35\",\n        \"origem\": \"Uberlândia - MG\",\n        \"destino\": \"São Paulo - SP\",\n        \"status\": \"EM_PERCURSO\"\n    },\n    {\n        \"id\": 2,\n        \"dataPartida\": \"2022-11-23\",\n        \"horaPartida\": \"08:30\",\n        \"dataChegada\": \"2022-11-23\",\n        \"horaChegada\": \"09:35\",\n        \"origem\": \"São Paulo - SP\",\n        \"destino\": \"Uberlândia - MG\",\n        \"status\": \"CONCLUIDO\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Buscar todos os pilotos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pilotos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pilotos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Buscar todos os pilotos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pilotos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pilotos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:28:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"registroAnac\": \"0018333\",\n        \"nome\": \"Bruno Dias\",\n        \"cpf\": \"227.568.170-15\",\n        \"dataDeNascimento\": \"1998-06-30\"\n    },\n    {\n        \"id\": 3,\n        \"registroAnac\": \"0018377\",\n        \"nome\": \"Thiago Silva\",\n        \"cpf\": \"573.061.450-02\",\n        \"dataDeNascimento\": \"1998-06-30\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Buscar todos os aviões",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/avioes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avioes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Buscar todos os aviões",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/avioes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"avioes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:18:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"modelo\": \"A320\",\n        \"fabricante\": \"Airbus\",\n        \"capacidade\": 240\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Buscar Voo por status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/voos/status/EM_PERCURSO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voos",
+						"status",
+						"EM_PERCURSO"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Buscar Voo por status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/voos/status/EM_PERCURSO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voos",
+								"status",
+								"EM_PERCURSO"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:19:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"dataPartida\": \"2022-11-23\",\n        \"horaPartida\": \"08:30\",\n        \"dataChegada\": \"2022-11-23\",\n        \"horaChegada\": \"09:35\",\n        \"origem\": \"Uberlândia - MG\",\n        \"destino\": \"São Paulo - SP\",\n        \"status\": \"EM_PERCURSO\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Cadastrar Piloto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"registroAnac\":\"0018976\",\r\n    \"nome\": \"Tansen Silva\",\r\n    \"cpf\": \"227.568.170-15\",\r\n    \"dataDeNascimento\": \"1998-06-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pilotos/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pilotos",
+						"cadastro"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Cadastrar Piloto",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registroAnac\":\"0018377\",\r\n    \"nome\": \"Thiago Silva\",\r\n    \"cpf\": \"573.061.450-02\",\r\n    \"dataDeNascimento\": \"1998-06-30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pilotos/cadastro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pilotos",
+								"cadastro"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:28:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"registroAnac\": \"0018377\",\n    \"nome\": \"Thiago Silva\",\n    \"cpf\": \"573.061.450-02\",\n    \"dataDeNascimento\": \"1998-06-30\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Cadastrar Avião",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"modelo\": \"A320\",\r\n  \"fabricante\": \"Airbus\",\r\n  \"capacidade\": 240,\r\n  \"prefixo\": \"PRT-3312\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/avioes/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avioes",
+						"cadastro"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Cadastrar Avião",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"modelo\": \"A320\",\r\n  \"fabricante\": \"Airbus\",\r\n  \"capacidade\": 240,\r\n  \"prefixo\": \"PRT-3312\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/avioes/cadastro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"avioes",
+								"cadastro"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:29:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"modelo\": \"A320\",\n    \"fabricante\": \"Airbus\",\n    \"capacidade\": 240,\n    \"prefixo\": \"PRT-3312\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Cadastrar Voo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPartida\": \"2022-11-23\",\r\n  \"horaPartida\": \"08:30\",\r\n  \"dataChegada\": \"2022-11-23\",\r\n  \"horaChegada\": \"09:35\",\r\n  \"origem\": \"Uberlândia - MG\",\r\n  \"destino\": \"São Paulo - SP\",\r\n  \"status\": \"EM_PERCURSO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/voos/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voos",
+						"cadastro"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Cadastrar Voo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dataPartida\": \"2022-11-23\",\r\n  \"horaPartida\": \"08:30\",\r\n  \"dataChegada\": \"2022-11-23\",\r\n  \"horaChegada\": \"09:35\",\r\n  \"origem\": \"São Paulo - SP\",\r\n  \"destino\": \"Uberlândia - MG\",\r\n  \"status\": \"CONCLUIDO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voos/cadastro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voos",
+								"cadastro"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:21:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"dataPartida\": \"2022-11-23\",\n    \"horaPartida\": \"08:30\",\n    \"dataChegada\": \"2022-11-23\",\n    \"horaChegada\": \"09:35\",\n    \"origem\": \"São Paulo - SP\",\n    \"destino\": \"Uberlândia - MG\",\n    \"status\": \"CONCLUIDO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deletar piloto por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pilotos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pilotos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar voo por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/voos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar aviao por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/avioes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avioes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar piloto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"registroAnac\":\"0018976\",\r\n    \"nome\": \"Tansen Silva\",\r\n    \"cpf\": \"227.568.170-15\",\r\n    \"dataDeNascimento\": \"1998-06-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pilotos/alterar/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pilotos",
+						"alterar",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Alterar piloto",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registroAnac\":\"0018976\",\r\n    \"nome\": \"Tansen Silva\",\r\n    \"cpf\": \"227.568.170-15\",\r\n    \"dataDeNascimento\": \"1998-06-30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pilotos/alterar/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pilotos",
+								"alterar",
+								"3"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:30:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"registroAnac\": \"0018976\",\n    \"nome\": \"Tansen Silva\",\n    \"cpf\": \"227.568.170-15\",\n    \"dataDeNascimento\": \"1998-06-30\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Alterar status do voo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"CONCLUIDO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/voos/alterar/status/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voos",
+						"alterar",
+						"status",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Alterar status do voo",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"CONCLUIDO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voos/alterar/status/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voos",
+								"alterar",
+								"status",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:52:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"dataPartida\": \"2022-11-23\",\n    \"horaPartida\": \"08:30\",\n    \"dataChegada\": \"2022-11-23\",\n    \"horaChegada\": \"09:35\",\n    \"origem\": \"Uberlândia - MG\",\n    \"destino\": \"São Paulo - SP\",\n    \"status\": \"CONCLUIDO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Alterar voo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPartida\": \"2022-11-23\",\r\n  \"horaPartida\": \"08:30\",\r\n  \"dataChegada\": \"2022-11-23\",\r\n  \"horaChegada\": \"09:55\",\r\n  \"origem\": \"Uberlândia - MG\",\r\n  \"destino\": \"São Paulo - SP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/voos/alterar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"voos",
+						"alterar",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Alterar voo",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dataPartida\": \"2022-11-23\",\r\n  \"horaPartida\": \"08:30\",\r\n  \"dataChegada\": \"2022-11-23\",\r\n  \"horaChegada\": \"09:55\",\r\n  \"origem\": \"Uberlândia - MG\",\r\n  \"destino\": \"São Paulo - SP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voos/alterar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voos",
+								"alterar",
+								"2"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:53:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"dataPartida\": \"2022-11-23\",\n    \"horaPartida\": \"08:30\",\n    \"dataChegada\": \"2022-11-23\",\n    \"horaChegada\": \"09:55\",\n    \"origem\": \"Uberlândia - MG\",\n    \"destino\": \"São Paulo - SP\",\n    \"status\": \"CONCLUIDO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Alterar aviao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"modelo\": \"A320\",\r\n  \"fabricante\": \"Airbus\",\r\n  \"capacidade\": 240,\r\n  \"prefixo\": \"PRT-3355\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/avioes/alterar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"avioes",
+						"alterar",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Alterar aviao",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"modelo\": \"A320\",\r\n  \"fabricante\": \"Airbus\",\r\n  \"capacidade\": 240,\r\n  \"prefixo\": \"PRT-3355\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/avioes/alterar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"avioes",
+								"alterar",
+								"2"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Nov 2022 18:58:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"modelo\": \"A320\",\n    \"fabricante\": \"Airbus\",\n    \"capacidade\": 240,\n    \"prefixo\": \"PRT-3355\"\n}"
+				}
+			]
+		}
+	]
+}
